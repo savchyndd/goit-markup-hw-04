@@ -1,0 +1,336 @@
+:root {
+  --header-color: #212121;
+  --desc-color: #757575;
+  --accent-color: #2196f3;
+  --address-color: rgba(255, 255, 255, 0.6);
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --bgr-primary-color: #f5f4fa;
+  --bgr-secondary-color: #2f303a;
+
+  --border-color: #eeeeee;
+  --header-border-color: #ececec;
+
+  --card-set-gap: 30px;
+}
+/* Reset styles */
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: 0;
+}
+address {
+  font-style: normal;
+}
+
+/* Global style */
+body {
+  background-color: var(--white-color);
+  color: var(--desc-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+h2,
+h3 {
+  color: var(--header-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding: 94px 0;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* heder */
+.header-main {
+  border-bottom: 1px solid var(--header-border-color);
+}
+.container.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo-footer {
+  color: var(--white-color);
+}
+.logo span {
+  color: var(--accent-color);
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-li-item:not(:last-child),
+.contacts-li-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-item {
+  display: block;
+  padding: 32px 0;
+
+  color: var(--header-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-item.current,
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--accent-color);
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--accent-color);
+}
+
+/* Main studio */
+/* Hero */
+.hero {
+  padding: 200px 0;
+  text-align: center;
+  background-color: var(--bgr-secondary-color);
+}
+.hero-title {
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 696px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.hero-btn {
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+}
+
+/* Features */
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+.features-item {
+  width: 270px;
+}
+.features-subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.features-desc {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* What we do */
+.section.wedo {
+  padding-top: 0;
+}
+.wedo-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.wedo-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Our team */
+.team {
+  text-align: center;
+  background-color: var(--bgr-primary-color);
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-item {
+  width: 270px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.card-team-text {
+  padding: 30px 0;
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+.team-desc {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* Main Portfolio */
+.container.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-btn {
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--header-color);
+  background-color: var(--bgr-primary-color);
+  border-radius: 4px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+.preview-item {
+  width: 370px;
+
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.card-preview-text {
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+  border-top: 0;
+}
+.preview-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.preview-desc {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Footer */
+footer {
+  padding: 60px 0;
+  background-color: var(--bgr-secondary-color);
+}
+.address-list {
+  margin-top: 20px;
+}
+.address-li-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-item.location {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-color);
+}
+.address-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--address-color);
+}
+.address-item:hover,
+.address-item:focus {
+  color: var(--accent-color);
+}
