@@ -12,6 +12,7 @@
   --border-color: #eeeeee;
   --header-border-color: #ececec;
 
+  --icon-color: #afb1b8;
   --card-set-gap: 30px;
 }
 /* Reset styles */
@@ -245,6 +246,48 @@ img {
   line-height: 1.18;
 }
 
+/* Regular clients */
+.client-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.client-list {
+  display: inline-flex;
+}
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+.client-link {
+  padding: 16px 32px;
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+
+  fill: var(--icon-color);
+}
+
+.client-item:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--accent-color);
+}
+.client-item:hover,
+.client-item:focus {
+  border-color: var(--accent-color);
+}
 /* Main Portfolio */
 .container.portfolio {
   padding-top: 94px;
