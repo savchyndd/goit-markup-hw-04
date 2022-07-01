@@ -151,6 +151,8 @@ img {
 /* Main studio */
 /* Hero */
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
   text-align: center;
   background-color: var(--bgr-secondary-color);
@@ -316,10 +318,19 @@ img {
 .client-link {
   padding: 16px 32px;
 }
+.client-item {
+  width: 170px;
+  height: 92px;
+}
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.client-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .client-icon {
   fill: var(--icon-color);
 }
@@ -377,7 +388,10 @@ img {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
-.preview-item:hover {
+.preview-link {
+  display: block;
+}
+.preview-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -404,6 +418,7 @@ footer {
 }
 .container.footer {
   display: flex;
+  align-items: baseline;
 }
 .address-logo-footer {
   margin-right: 70px;
@@ -433,9 +448,9 @@ footer {
 }
 
 .title-links-footer {
-  margin-top: 12px;
   margin-bottom: 20px;
 
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
